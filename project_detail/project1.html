@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gitae's 포트폴리오</title>
+    <title>Gitae's 포트폴리오 - 프로젝트1</title>
 	<!-- favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="../resources/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="../resources/favicon/favicon-32x32.png">
@@ -16,7 +16,7 @@
 	<!-- top bar css -->
 	<link rel="stylesheet" href="../resources/css/top_bar.css">
 	<!-- project_detail common css-->
-	<link rel="stylesheet" href="../resources/css/project_detail/project_detail_common.css">
+	<link rel="stylesheet" href="../resources/css/project_detail_common.css">
 </head>
 <body>
 	<!-- top_bar -->
@@ -53,7 +53,7 @@
                     <h2 class="content_title">프로젝트 1</h2>
                     <div class="content_item">
 						<div class="project_detail_img_wrapper">
-							<img src="../resources/img/project/kiosk.JPG" alt="키오스크 제작">
+							<img src="../resources/img/project/kiosk_project/kiosk_project1.png" alt="키오스크 제작">
 						</div>
 						<div class="box_shadow_wrapper">
 							<div class="item_title_wrapper">
@@ -79,7 +79,7 @@
 											<span class="detail_title">기간</span>
 										</div>
 										<div>
-											<span class="detail_content">2023년 5월 초 ~ 2023 년 6월 중순 (한달 반)</span>
+											<span class="detail_content">2023년 5월 초 ~ 2023 년 5월 말 (4주)</span>
 										</div>
 									</div>
 									<div class="detail_items">
@@ -96,8 +96,9 @@
 										</div>
 										<div>
 											<ul class="detail_content">
-												<li>1번</li>
-												<li>2번</li>
+												<li>키오스크 기능 구현 - 포인트적립, 타이머 기능, 결제방식 별 페이지이동 설정,
+													화면 모달화 등</li>
+												<li>관리자 페이지 구현 - 매출 데이터 관리, 메뉴 이미지 파일 관리 등</li>
 											</ul>
 										</div>
 									</div>
@@ -131,7 +132,7 @@
 											<span class="detail_title">IDE</span>
 										</div>
 										<div>
-											<span class="detail_content">Eclpise</span>
+											<span class="detail_content">Eclipse</span>
 										</div>
 									</div>
 								</div>
@@ -140,28 +141,142 @@
                     </div>
 					<h2 class="content_title">담당 역할</h2>
                     <div class="content_item">
-						<div class="role_container_div">
-							<div>
+						<div class="role_container_layer">
+							<div class="role_container_div pattern_CI">
 								<div>
-									<span class="role_title_span">포인트적립 기능</span>
+									<div>
+										<span class="role_title_span">타이머 기능</span>
+									</div>
+									<div>
+										<ul class="role_ul">
+											<li>Timer 클래스 thread 활용</li>
+											<li>대기화면에서 일정 시간 경과 시 사진이 바뀌는
+												사진 자동 변환 기능을 구현했습니다.</li>
+											<li>영수증 출력, 주문완료 등 최종 페이지 단계에서
+												사용자의 입력이 없을 경우 자동 대기화면으로 
+												이동시키는 기능을 구현했습니다.</li>
+										</ul>
+									</div>
 								</div>
-								<div>
-									<ul class="role_ul">
-										<li>1번</li>
-										<li>2번</li>
-										<li>3번</li>
-									</ul>
+								<div class="role_img_div_wrapper">
+									<img src="../resources/img/project/kiosk_project/kiosk_timer_img.png" alt="project_timer_img">
 								</div>
-							</div>
-							<div class="role_img_div_wrapper">
-
-							</div>
+							</div>	
 						</div>			
+						<div class="partition"></div>
+						<div class="role_container_layer">
+							<div class="role_container_div pattern_IC">
+								<div class="role_img_div_wrapper">
+									<img src="../resources/img/project/kiosk_project/coupon.png" alt="project_timer_img">
+								</div>
+								<div>
+									<div>
+										<span class="role_title_span">포인트 적립 기능</span>
+									</div>
+									<div>
+										<ul class="role_ul">
+											<li>사용자의 전화번호를 통해 적립하는 방식입니다.</li>
+											<li>포인트 10번 당 1회의 무료 음료 쿠폰을 줍니다.</li>
+											<li>전화번호는 기초적인 carsar 암호화 방식을 통해
+												암호화했습니다. DB 조회 결과 첫 이용 회원인 경우 insert문, 기존 정보 존재 시 update하는 로직을
+												통해 이루어집니다.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="partition"></div>
+						<div class="role_container_layer">
+							<div class="role_container_div pattern_CC">
+								<div>
+									<div>
+										<span class="role_title_span">화면 모달화</span>
+									</div>
+									<div>
+										<ul class="role_ul">
+											<li>Java swing frame의 modal 기능 활용</li>
+											<li>추가 팝업이 존재할 때 main 화면에 대한 동작을 제어합니다.</li>
+											<li>현재 사용자가 보고 있는 화면에 대한 정보를 싱글톤 로직을 활용하여 메인화면에 전송합니다. 이 정보를 바탕으로 타이머 등의 동작을 정의해줍니다.</li>
+										</ul>
+									</div>
+								</div>
+								<div>
+									<div>
+										<span class="role_title_span">결제방식 별 화면 이동 제어</span>
+									</div>
+									<div>
+										<ul class="role_ul">
+											<li>카드, 쿠폰, QR 코드 결제방식 간 경로 제어</li>
+											<li>결제 방식 선택 창에서 어떤 방식을 선택했느냐에
+												따라 최종적인 결과에 이를 때까지 정보, 경로 제어가 
+											   잘 이루어질 수 있도록 흐름 관리를 했습니다.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="role_container_layer">
+							<div class="role_container_div pattern_I">
+								<div class="role_img_div_wrapper">
+									<img src="../resources/img/project/kiosk_project/kiosk_last.png" alt="결제방식 별 화면 이동 제어_img">
+								</div>
+							</div>
+						</div>
+						<div class="partition"></div>
+						<div class="role_container_layer">
+							<div class="role_container_div pattern_IC">
+								<div class="role_img_div_wrapper">
+									<img src="../resources/img/project/kiosk_project/admin_img.png" alt="관리자 이미지 파일 관리_img">
+								</div>
+								<div>
+									<div>
+										<span class="role_title_span">관리자 이미지 파일 관리</span>
+									</div>
+									<div>
+										<ul class="role_ul">
+											<li>Java swing FileSelecter 기능 활용</li>
+											<li>Java 내장 io 클래스 File, FileFilter 활용</li>
+											<li>필터를 통해 이미지 이외의 파일이 들어오는 것을 막고
+												파일 존재여부에 따라 파일명이 숫자로 끝날 경우 숫자에 +1을, 숫자 이외일 경우 숫자 2를 붙여주는 방식으로 파일 중복으로 인한 파일 교체를 예방했습니다.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="partition"></div>
+						<div class="role_container_layer">
+							<div class="role_container_div pattern_C">
+								<div>
+									<div>
+										<span class="role_title_span">관리자 매출 관리</span>
+									</div>
+									<div>
+										<ul class="role_ul">
+											<li>외부의 datepicker 클래스를 커스텀해서 만든 날짜선택기로 일정 기간 내 매출조회 가능합니다.</li>
+											<li>매출내역을 클릭할 경우 해당 매출에 해당하는 세부내역을 볼 수 있습니다.</li>
+											<li>전체, 월별, 연별, 일별 합계 금액 조회가 가능합니다. 기간을 정한 경우에도 마찬가지로 동작합니다. </li>
+											<li>사용자가 선택 가능한 경우의 수를 계산해서 조회 요청이 들어왔을 때 해당하는 쿼리문으로 연결되도록 했습니다. </li>
+											<li>해당 로직을 구현하는 과정에서 메서드 재사용성을 높이기 위해 Query문을 외부 멤버변수로 바꿔서
+												메서드 외부로 분리하여 관리했습니다.<br> 이를 통해 dao 내 코드라인을 200줄 가까이 줄일 수 있었습니다.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="role_container_layer">
+							<div class="role_container_div pattern_I">
+								<div class="role_img_div_wrapper">
+									<img src="../resources/img/project/kiosk_project/admin_salesdata.png" alt="관리자 매출 관리_img">
+								</div>
+							</div>
+						</div>
 					</div>
                 </divv>
             </div>
         </div>
     </main>
+
+	<button id="upbutton" class="btn">⇑</button>
 
 	<!-- detail 공통 js -->
 	<script src="../resources/js/common.js"></script>

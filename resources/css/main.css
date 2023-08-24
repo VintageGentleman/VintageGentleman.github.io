@@ -13,6 +13,7 @@ section {
     margin: 200px 0;
 }
 
+/* 프로필 섹션 */
 #profile_main {
     display: grid;
     grid-template-columns: 30% 70%;
@@ -45,6 +46,11 @@ section {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+}
+
+#contact_div a {
+    text-decoration: none;
+    color: black;
 }
 
 .contact_div_layer {
