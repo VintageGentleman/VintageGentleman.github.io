@@ -1,0 +1,36 @@
+#top_bar {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 400px 1fr 100px 200px 200px;
+    z-index: 899;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 2px solid #e9e9f2;
+}
+
+#header_home:hover {
+    cursor: pointer;    
+}
+
+#top_bar > div:nth-child(3),
+#top_bar > div:nth-child(4) {
+border-right: 2px #e2e2e2 solid;    
+}
+
+.top_bar_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.top_bar_content_inner {
+    display: none;
+}
+
+#header_click_div {
+    cursor: default;
+}

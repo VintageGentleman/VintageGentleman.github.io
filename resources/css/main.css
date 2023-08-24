@@ -1,0 +1,168 @@
+
+/* 사이드바 설정 */
+.present_view {
+    border-left: 3px solid #eeab0a;
+    background-color: #0e151d;
+}
+.present_view span.material-icons {
+    color: #eeab0a;
+}
+
+section {
+    position: relative;
+    margin: 200px 0;
+}
+
+#profile_main {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+#profile_img {
+    max-height: 300px;
+    max-width: 300px;
+}
+#profile_content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+#name_div {
+    display: flex;
+    flex-direction: column;
+}
+#name_div span {
+    display: inline-block;
+}
+#name_div > span:first-child {
+    font-size: 2em;
+}
+#name_div > span:last-child {
+    font-size: 1.5em;
+}
+
+#contact_div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.contact_div_layer {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+}
+
+.contact_div_item {
+    display: flex;
+    align-items: center;
+}
+
+.icon-github {
+    font-size: 1.1em;
+    margin-right: 5px;
+}
+
+/** 스택 섹션 */
+.stack_layer {
+    margin-bottom: 60px;
+}
+
+.stack_layer.item2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.stack_wrapper {
+    overflow: hidden;
+}
+
+.stack_container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 700px;
+}
+
+.stack_item {
+    position: relative;
+    transition: 0.4s;
+}
+
+.stack_item:hover {
+    transform: translate(0, -5px);
+}
+
+.stack_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stack_text span {
+    font-size: 1.1em;
+}
+
+/** 프로젝트 섹션 */
+.item_title_wrapper {
+    margin-bottom: 30px;
+}
+
+.project_wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.project_container {
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    padding: 5px;
+    overflow: hidden;
+}
+.project_container:hover {
+    transform: translateY(-5px);
+    filter: brightness(80%);
+}
+
+.project_preview_img_div {
+    border-radius: 5px;
+    overflow: hidden;
+    max-height: 250px;
+    margin-bottom: 10px;
+}
+
+.project_preview_img_div img {
+    border-radius: 5px;
+    max-height: 300px;
+}
+
+.project_preview_content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.project_title::before {
+    content: "프로젝트명";
+    padding-left: 1px;
+    border-left: 3px solid green;
+    display: block;
+}
+
+.project_period::before {
+    content: "기간";
+    padding-left: 1px;
+    border-left: 3px solid green;
+    display: block;
+}
+
+/** 커리어 섹션 */
+.career_container {
+    display: grid;
+    grid-template-columns: 30% 65%;
+
+    border-bottom: 1px solid #808080;
+}
