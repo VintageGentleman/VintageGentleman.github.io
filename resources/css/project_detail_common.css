@@ -78,14 +78,23 @@ ul.detail_content li {
 }
 
 .role_container_layer {
-    margin: 30px 0;
+    margin: 50px 0;
 } 
+
+.role_sub_layer > div:nth-child(2n) {
+    margin-bottom: 40px;
+}
 
 .role_container_div.pattern_I > div {
     padding: auto;
 }
 .role_container_div.pattern_I > div > img {
     max-height: 600px;
+}
+
+.role_container_div.pattern_II {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .role_container_div.pattern_CI{
@@ -116,6 +125,13 @@ ul.detail_content li {
     border-radius: 30px;
     background-color: #808080;
     color: #fff;
+}
+
+.role_sub_title_span {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #024aab;
+    padding-left: 20px;
 }
 
 ul.role_ul {

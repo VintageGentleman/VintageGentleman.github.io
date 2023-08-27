@@ -1,7 +1,7 @@
 const $span_header_home = document.querySelector('#header_home');
 
 $span_header_home.addEventListener('click', function() {
-    location.href='./portfolio_main.html';
+    location.href='./index.html';
 });
 
 const containers = document.querySelectorAll('.project_container');

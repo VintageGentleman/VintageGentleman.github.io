@@ -1,0 +1,41 @@
+section {
+    border-bottom: 1px dotted blueviolet;
+    padding-bottom: 50px;
+    margin-bottom: 100px; 
+}
+
+.img_width_500 {
+    max-width: 500px;
+}
+.img_width_600 {
+    max-width: 600px;
+}
+.img_width_400 {
+    max-width: 400px;
+}
+.img_width_200 {
+    max-width: 200px;
+}
+.img_width_100 {
+    max-width: 100px;
+}
+
+#faq_main_img {
+    max-height: 750px;
+}
+
+#mypage_log_out_img {
+    max-width: 250px;
+}
+
+#game_detail_page_img {
+    max-height: 1200px;
+}
+
+#layout_update_page_img {
+    max-height: 800px;
+}
+
+#layout_update_page_sub_title_div {
+    margin-top: 80px;
+}
